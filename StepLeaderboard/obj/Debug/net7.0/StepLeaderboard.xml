@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StepLeaderboard</name>
+    </assembly>
+    <members>
+        <member name="M:StepLeaderboard.Controllers.TeamsController.CreateTeam(StepLeaderboard.Controllers.TeamRequest)">
+            <summary>
+            Create a new team
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StepLeaderboard.Controllers.TeamsController.GetAllTeams">
+            <summary>
+            Get all teams
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StepLeaderboard.Controllers.TeamsController.GetTeam(System.String)">
+            <summary>
+            Get a specific team
+            </summary>
+            <param name="teamId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StepLeaderboard.Controllers.TeamsController.DeleteTeam(System.String)">
+            <summary>
+            Delete a team
+            </summary>
+            <param name="teamId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StepLeaderboard.Controllers.TeamsController.AddCounter(System.String,StepLeaderboard.Controllers.CounterRequest)">
+            <summary>
+            Add a counter to a team
+            </summary>
+            <param name="teamId"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StepLeaderboard.Controllers.TeamsController.GetCounters(System.String)">
+            <summary>
+            Get all counters for a team
+            </summary>
+            <param name="teamId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StepLeaderboard.Controllers.TeamsController.DeleteCounter(System.String,System.String)">
+            <summary>
+            Delete a counter from a team
+            </summary>
+            <param name="teamId"></param>
+            <param name="counterId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StepLeaderboard.Controllers.TeamsController.IncrementSteps(System.String,System.String,StepLeaderboard.Controllers.StepRequest)">
+            <summary>
+            Increment steps for a counter
+            </summary>
+            <param name="teamId"></param>
+            <param name="counterId"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StepLeaderboard.Controllers.TeamsController.GetTeamSteps(System.String)">
+            <summary>
+            Get total steps of a team
+            </summary>
+            <param name="teamId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:StepLeaderboard.Controllers.TeamRequest">
+            Request models for POST data
+        </member>
+        <member name="P:StepLeaderboard.Controllers.TeamRequest.Name">
+            <summary>
+            Team Name
+            </summary>
+        </member>
+        <member name="T:StepLeaderboard.Controllers.CounterRequest">
+            <summary>
+            Add counter
+            </summary>
+        </member>
+        <member name="P:StepLeaderboard.Controllers.CounterRequest.EmployeeName">
+            <summary>
+            Employee name
+            </summary>
+        </member>
+        <member name="T:StepLeaderboard.Controllers.StepRequest">
+            <summary>
+            Increase counter
+            </summary>
+        </member>
+        <member name="P:StepLeaderboard.Controllers.StepRequest.Increment">
+            <summary>
+            Increase counter
+            </summary>
+        </member>
+    </members>
+</doc>
